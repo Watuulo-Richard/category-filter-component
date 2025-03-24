@@ -98,3 +98,33 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+/* This makes our checkboxes look nicer */
+input[type="checkbox"] {
+  @apply w-4 h-4 cursor-pointer;
+  transition: all 0.2s ease;
+}
+
+/* This adds a fun bounce effect when we hover over buttons */
+button {
+  @apply relative;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* This adds a nice shadow effect to our component */
+.shadow-fancy {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow-fancy:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
